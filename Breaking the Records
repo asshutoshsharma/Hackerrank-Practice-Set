@@ -1,0 +1,18 @@
+n = int(input())
+scores = list(map(int, input().rstrip().split()))
+hs=[]
+min=scores[0]
+count=0
+cou=0
+max=scores[0]
+for x in range (0,len(scores)):
+    if(min>(int(scores[x]))):
+        min=int(scores[x])
+        count=count+1
+    elif (max<(int(scores[x]))):
+        max =int(scores[x])
+        cou=cou+1
+hs.append(cou)
+hs.append(count)
+stri=str(cou)+' '+str(count)
+print(stri)
