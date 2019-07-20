@@ -1,0 +1,24 @@
+str=''
+l=[]
+sum=0
+su=0
+x=1
+str=input()
+l=str.split()
+x1=int(l[0])
+x2=int(l[2])
+v1=int(l[1])
+v2=int(l[3])
+flag=0
+if(x1<x2):
+    for x in range (0,10000):
+        if x1==x2:
+            flag=1
+            break
+        else:
+            x1=x1+v1
+            x2=x2+v2
+if(flag==1):
+    print("YES")
+else:
+    print("NO")
