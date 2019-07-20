@@ -1,0 +1,34 @@
+#include "stdio.h"
+int main()
+{
+    int t,n[100000],i,j,l=1,p=0,h[100000];
+    scanf("%d",&t);
+    for(i=0;i<t;i++)
+    {
+        scanf("%d",&n[i]);
+        if(n[i]>p)
+        {
+            p=n[i];
+        }
+    }
+    h[0]=1;
+    for(i=1;i<=p;i++)
+    {
+
+        if(i%2==0)
+        {
+            l=l+1;
+            h[i]=l;
+        }
+        else
+        {
+            l=l+l;
+            h[i]=l;
+        }
+    }
+    for(i=0;i<t;i++)
+    {
+        printf("%d\n",h[(n[i])]);
+    }
+    return 0;
+}
