@@ -1,0 +1,44 @@
+
+at=[]
+sum=0
+ats=[]
+su=0
+s=[]
+st=''
+st=input()
+s=st.split()
+a=[]
+ab=''
+ab=input()
+a=st.split()
+m=[]
+mn=''
+mn=input()
+m=st.split()
+c=[]
+count=0
+coun=0
+d=[]
+cd=''
+cd=input()
+c=[float(i) for i in cd.split(' ')]
+dc=''
+dc=input()
+d=[float(i) for i in dc.split(' ')]
+
+for x in range(0,len(cd)):
+    for i in c:
+        if i<0:
+            ats.append(i)
+    sum=(int(a[0])+int(ats[x]))
+    if(sum>=7 and sum <=11):
+        coun=coun+1
+print(coun)
+for x in range(0,len(dc)):
+    for i in c:
+        if i<0:
+            at.append(i)
+    su=int(a[1])+int(at[x])
+    if(su>=7 and su <=11):
+        count=count+1
+print(count)
