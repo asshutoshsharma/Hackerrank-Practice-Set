@@ -1,0 +1,23 @@
+import math
+i=list(input().split())
+g=int(i[0])
+h=int(i[1])
+Number=0
+l=0
+m=0
+count=0
+for x in range (g,h+1):
+    Number=int(x)
+    l=int(x)
+    Reverse = 0
+    while(Number > 0):
+        Reminder=Number %10
+        Reverse=int((Reverse *10)+Reminder)
+        Number = Number//10
+    sum=(l-Reverse)/int(i[2])
+    sum=abs(sum)
+    j=sum
+    sum=math.ceil(sum)
+    if(j==sum):
+        count=count+1
+print(count)
