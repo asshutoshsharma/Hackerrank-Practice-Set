@@ -1,0 +1,20 @@
+n = int(input().strip())
+s = list(map(int, input().rstrip().split()))
+dm = input().rstrip().split()
+d = int(dm[0])
+count=0
+flag=0
+m = int(dm[1])
+for x in range(0,n):
+    sm=0
+    sm+=s[x]
+    new=1
+    if(x+1!=n):
+        j=x+1
+        while(new<m and j!=n):
+            sm+=s[j]
+            new+=1
+            j+=1
+    if(sm==d):
+        count=count+1
+print(count)
