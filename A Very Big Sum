@@ -1,0 +1,6 @@
+n=input()
+li=list(map(int,input().split()))
+sum=0
+for x in li:
+    sum=sum+x
+print(sum)
