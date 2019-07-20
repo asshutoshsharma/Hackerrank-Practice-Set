@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+
+ int main(){
+    
+   
+    int hh, mm, ss,l ;
+    char t12[2];
+    scanf("%d:%d:%d%c%c", &hh, &mm, &ss, &t12[0],&t12[1]) ;
+    if(hh==12)
+    {
+        hh=0;
+    }
+    if (t12[0]=='P'&& t12[1]=='M') 
+    {
+    hh=hh+12 ;
+    }
+    else if (t12[0]=='A'&&t12[1]=='M')
+    {
+    hh=hh ;
+    }
+    printf("%02d:%02d:%02d", hh, mm, ss) ;
+    return 0;
+}
+
