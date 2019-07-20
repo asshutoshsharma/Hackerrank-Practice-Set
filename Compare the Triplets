@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int i,n=0,k=0,a[3],b[3];
+    for(i=0;i<3;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<3;i++)
+    {
+        scanf("%d",&b[i]);
+    }
+    for(i=0;i<3;i++)
+    {
+        if(a[i]>b[i])
+        {
+            n++;
+        }
+        else if(a[i]<b[i])
+        {
+            k++;
+        }
+        else
+        {
+            k=k+0;
+            n=n+0;
+        }
+    }
+    printf("%d %d",n,k);
+    return 0;
+}
