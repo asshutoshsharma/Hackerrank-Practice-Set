@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int sum=0,n,k,b[100000],i,j,x,l;
+    scanf("%d %d",&n,&k);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&b[i]);
+    }
+    scanf("%d",&x);
+    for(i=0;i<n;i++)
+    {
+        if(i!=k)
+        {
+            sum=sum+b[i];
+        }
+    }
+    sum=sum/2;
+    l=x-sum;
+    if(l==0)
+    {
+        printf("Bon Appetit");
+    }
+    else
+    {
+        printf("%d",l);
+    }
+    return 0;
+}
