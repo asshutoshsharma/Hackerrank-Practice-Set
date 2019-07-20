@@ -1,0 +1,20 @@
+n=0
+n=int(input())
+a=[]*n
+str=''
+m=0
+d=0
+l=0
+for x in range(0,n):
+    str=str+' '+(input())
+for x in str.split():
+    l=(int(x)%5)
+    m=5-l
+    if int(x)<38:
+        print(x)
+    else:
+        if m<3:
+            d=m+int(x)
+            print(d)
+        else:
+            print(x)
